@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16181c"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logo2"
+                android:layout_marginTop="22dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:fontFamily="@font/squre"
+                android:text="Login Into\nYour Wallet"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/dark_grey_back"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp">
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#fff"
+                    android:drawableStart="@drawable/email"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:background="@drawable/edittext_backk"
+                    android:hint="@string/email"
+                    android:textColorHint="#fff"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/editTextpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#fff"
+                    android:drawableStart="@drawable/password"
+                    android:ems="10"
+                    android:inputType="numberPassword"
+                    android:background="@drawable/edittext_backk"
+                    android:hint="Password"
+                    android:textColorHint="#fff"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="32dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/facebook"
+                        android:layout_marginEnd="32dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/google" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="Are you new user? Register"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    style="@android:style/Widget.Button"
+                    android:background="@drawable/button_back"
+                    android:text="Login"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forget password? Recovery it"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:layout_margin="2sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
